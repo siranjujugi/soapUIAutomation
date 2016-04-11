@@ -1,0 +1,129 @@
+Status: FAILED
+Time Taken: 376
+Size: 0
+Timestamp: Wed Jan 27 18:43:12 IST 2016
+TestStep: getCustomerAssetDetail - Request 1
+
+----------------- Messages ------------------------------
+java.net.UnknownHostException: zlt03023.vci.att.com
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: http://zlt03023.vci.att.com:50001/InventoryAggregationService/InventoryAggregationService
+
+---------------- Request ---------------------------
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+   <SOAP-ENV:Header>
+      <oas:Security xmlns:oas="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <oas:UsernameToken>
+            <oas:Username>gdb</oas:Username>
+            <oas:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">gdb.1234</oas:Password>
+         </oas:UsernameToken>
+      </oas:Security>
+   </SOAP-ENV:Header>
+   <SOAP-ENV:Body>
+      <v1:getCustomerAssetDetailRequest xmlns:v1="http://gcp.att.com/gdb/inventagg/v1" xmlns:v11="http://gcp.att.com/gdb/basetype/v1" xmlns:v3="http://cio.att.com/commonheader/v3">
+         <v3:WSHeader>
+            <!--Optional:-->
+            <v3:WSEndUserToken>
+               <!--Optional:-->
+               <v3:Token>?</v3:Token>
+               <!--Optional:-->
+               <v3:TokenType>?</v3:TokenType>
+               <!--Zero or more repetitions:-->
+               <v3:WSNameValue>
+                  <v3:Name>?</v3:Name>
+                  <v3:Value>?</v3:Value>
+               </v3:WSNameValue>
+            </v3:WSEndUserToken>
+            <!--Optional:-->
+            <v3:WSContext>
+               <!--Optional:-->
+               <v3:FromAppId>?</v3:FromAppId>
+               <!--Optional:-->
+               <v3:ToAppId>?</v3:ToAppId>
+               <!--Optional:-->
+               <v3:Version>
+                  <v3:major>3</v3:major>
+                  <v3:minor>3</v3:minor>
+               </v3:Version>
+               <!--Optional:-->
+               <v3:SourceIPAddress>?</v3:SourceIPAddress>
+               <!--Zero or more repetitions:-->
+               <v3:WSNameValue>
+                  <v3:Name>?</v3:Name>
+                  <v3:Value>?</v3:Value>
+               </v3:WSNameValue>
+            </v3:WSContext>
+            <!--Optional:-->
+            <v3:WSCallback>
+               <!--Optional:-->
+               <v3:URL>?</v3:URL>
+               <!--Optional:-->
+               <v3:WSCorrelationId>?</v3:WSCorrelationId>
+               <!--Optional:-->
+               <v3:FaultURL>?</v3:FaultURL>
+            </v3:WSCallback>
+            <!--Optional:-->
+            <v3:WSConversationId>?</v3:WSConversationId>
+            <!--Optional:-->
+            <v3:WSMessageData>
+               <!--Optional:-->
+               <v3:MessageId>?</v3:MessageId>
+               <!--Optional:-->
+               <v3:RefToMessageId>?</v3:RefToMessageId>
+               <!--Optional:-->
+               <v3:Timestamp>2014-01-10T05:30:00Z</v3:Timestamp>
+            </v3:WSMessageData>
+            <!--Optional:-->
+            <v3:WSResponseMessageExpiration>10</v3:WSResponseMessageExpiration>
+            <!--Optional:-->
+            <v3:WSEnterpriseLogging>
+               <!--Optional:-->
+               <v3:ApplicationID>?</v3:ApplicationID>
+               <!--Optional:-->
+               <v3:LoggingKey>?</v3:LoggingKey>
+            </v3:WSEnterpriseLogging>
+         </v3:WSHeader>
+         <!--You have a CHOICE of the next 2 items at this level-->
+         <v1:SequenceAssetData>
+            <v1:idOrganization>
+               <v11:ObjectId>84751765</v11:ObjectId>
+            </v1:idOrganization>
+            <v1:assetSummary>
+               <v11:idObj>
+                  <v11:ObjectId>84878482</v11:ObjectId>
+               </v11:idObj>
+               <v11:assetType>ACCESS_CIRCUIT</v11:assetType>
+            </v1:assetSummary>
+            <v1:assetSummary>
+               <v11:idObj>
+                  <v11:ObjectId>84878577</v11:ObjectId>
+               </v11:idObj>
+               <v11:assetType>NETWORK_CONNECTION</v11:assetType>
+            </v1:assetSummary>
+            <v1:assetSummary>
+               <v11:idObj>
+                  <v11:ObjectId>84878579</v11:ObjectId>
+               </v11:idObj>
+               <v11:assetType>NETWORK_CONNECTION</v11:assetType>
+            </v1:assetSummary>
+            <v1:assetSummary>
+               <v11:idObj>
+                  <v11:ObjectId>86989443</v11:ObjectId>
+               </v11:idObj>
+               <v11:assetType>EQUIPMENT</v11:assetType>
+            </v1:assetSummary>
+            <v1:assetSummary>
+               <v11:idObj>
+                  <v11:ObjectId>86989444</v11:ObjectId>
+               </v11:idObj>
+               <v11:assetType>EQUIPMENT</v11:assetType>
+            </v1:assetSummary>
+         </v1:SequenceAssetData>
+      </v1:getCustomerAssetDetailRequest>
+   </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
+
+---------------- Response --------------------------
+- missing response / garbage collected -

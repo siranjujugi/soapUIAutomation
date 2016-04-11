@@ -1,0 +1,3 @@
+INDEX VERSION 1.126
+C:\workspace\SoapUI\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\844340010.index
+\soapUIAutomation\src\main\resources

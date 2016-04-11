@@ -1,0 +1,86 @@
+2016-01-27 18:43:12,092 WARN  [SoapUI] Missing folder [C:\workspace\SoapUI\soapUIAutomation\.\ext] for external libraries
+2016-01-27 18:43:12,092 INFO  [DefaultSoapUICore] Creating new settings at [C:\Users\IBM_ADMIN\soapui-settings.xml]
+2016-01-27 18:43:12,619 INFO  [WsdlProject] Loaded project from [file:/C:/workspace/SoapUI/soapUIAutomation/SoapUITester-soapui-project.xml]
+2016-01-27 18:43:12,908 INFO  [SoapUITestCaseRunner] Running SoapUI tests in project [InventoryAggregationServiceUp]
+2016-01-27 18:43:12,909 INFO  [SoapUITestCaseRunner] Running Project [InventoryAggregationServiceUp], runType = SEQUENTIAL
+2016-01-27 18:43:12,928 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase 1]
+2016-01-27 18:43:12,932 INFO  [SoapUITestCaseRunner] running step [getCustomerAssetDetail - Request 1]
+2016-01-27 18:43:13,309 ERROR [WsdlSubmit] Exception in request: java.net.UnknownHostException: zlt03023.vci.att.com
+2016-01-27 18:43:13,309 ERROR [SoapUI] An error occurred [zlt03023.vci.att.com], see error log for details
+2016-01-27 18:43:13,309 ERROR [errorlog] java.net.UnknownHostException: zlt03023.vci.att.com
+java.net.UnknownHostException: zlt03023.vci.att.com
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:45)
+	at org.apache.http.impl.conn.DefaultClientConnectionOperator.resolveHostname(DefaultClientConnectionOperator.java:278)
+	at com.eviware.soapui.impl.wsdl.support.http.SoapUIMultiThreadedHttpConnectionManager$SoapUIClientConnectionOperator.openConnection(SoapUIMultiThreadedHttpConnectionManager.java:274)
+	at org.apache.http.impl.conn.AbstractPoolEntry.open(AbstractPoolEntry.java:151)
+	at org.apache.http.impl.conn.AbstractPooledConnAdapter.open(AbstractPooledConnAdapter.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryConnect(DefaultRequestDirector.java:643)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:479)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:906)
+	at org.apache.http.impl.client.AbstractHttpClient.execute(AbstractHttpClient.java:805)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport$Helper.execute(HttpClientSupport.java:247)
+	at com.eviware.soapui.impl.wsdl.support.http.HttpClientSupport.execute(HttpClientSupport.java:357)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.submitRequest(HttpClientRequestTransport.java:318)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:232)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:148)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:43)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2016-01-27 18:43:13,312 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2016-01-27 18:43:13,313 INFO  [SoapUITestCaseRunner] Assertion [Match content of [ObjectId]] has status UNKNOWN
+2016-01-27 18:43:13,313 INFO  [SoapUITestCaseRunner] Assertion [Match content of [isReadOnly]] has status UNKNOWN
+2016-01-27 18:43:13,313 ERROR [SoapUITestCaseRunner] getCustomerAssetDetail - Request 1 failed, exporting to [C:\workspace\SoapUI\soapUIAutomation\target\soapui-reports\TestSuite_1-TestCase_1-getCustomerAssetDetail__Request_1-0-FAILED.txt]
+2016-01-27 18:43:13,325 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase 1], time taken: 376ms, status: FAILED
+2016-01-27 18:43:13,325 INFO  [SoapUITestCaseRunner] Running SoapUI testcase [TestCase 2]
+2016-01-27 18:43:13,325 INFO  [SoapUITestCaseRunner] running step [SOAP Request]
+2016-01-27 18:43:13,327 ERROR [WsdlSubmit] Exception in request: org.apache.xmlbeans.impl.values.XmlValueOutOfRangeException: string value 'No Authorization' is not a valid enumeration value for type of authType element in Credentials in namespace http://eviware.com/soapui/config
+2016-01-27 18:43:13,327 ERROR [SoapUI] An error occurred [string value 'No Authorization' is not a valid enumeration value for type of authType element in Credentials in namespace http://eviware.com/soapui/config], see error log for details
+2016-01-27 18:43:13,327 ERROR [errorlog] org.apache.xmlbeans.impl.values.XmlValueOutOfRangeException: string value 'No Authorization' is not a valid enumeration value for type of authType element in Credentials in namespace http://eviware.com/soapui/config
+org.apache.xmlbeans.impl.values.XmlValueOutOfRangeException: string value 'No Authorization' is not a valid enumeration value for type of authType element in Credentials in namespace http://eviware.com/soapui/config
+	at org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx.set_text(JavaStringEnumerationHolderEx.java:39)
+	at org.apache.xmlbeans.impl.values.XmlObjectBase.update_from_wscanon_text(XmlObjectBase.java:1166)
+	at org.apache.xmlbeans.impl.values.XmlObjectBase.check_dated(XmlObjectBase.java:1305)
+	at org.apache.xmlbeans.impl.values.JavaStringEnumerationHolderEx.getEnumValue(JavaStringEnumerationHolderEx.java:60)
+	at com.eviware.soapui.config.impl.CredentialsConfigImpl.getAuthType(Unknown Source)
+	at com.eviware.soapui.impl.support.AbstractHttpRequest.getAuthType(AbstractHttpRequest.java:523)
+	at com.eviware.soapui.impl.wsdl.endpoint.DefaultEndpointStrategy.applyDefaultsToWsdlRequest(DefaultEndpointStrategy.java:213)
+	at com.eviware.soapui.impl.wsdl.endpoint.DefaultEndpointStrategy.filterRequest(DefaultEndpointStrategy.java:199)
+	at com.eviware.soapui.impl.wsdl.submit.filters.EndpointStrategyRequestFilter.filterRequest(EndpointStrategyRequestFilter.java:35)
+	at com.eviware.soapui.impl.wsdl.submit.transports.http.HttpClientRequestTransport.sendRequest(HttpClientRequestTransport.java:179)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.run(WsdlSubmit.java:123)
+	at com.eviware.soapui.impl.wsdl.WsdlSubmit.submitRequest(WsdlSubmit.java:76)
+	at com.eviware.soapui.impl.wsdl.WsdlRequest.submit(WsdlRequest.java:238)
+	at com.eviware.soapui.impl.wsdl.teststeps.WsdlTestRequestStep.run(WsdlTestRequestStep.java:417)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.runTestStep(AbstractTestCaseRunner.java:239)
+	at com.eviware.soapui.impl.wsdl.testcase.WsdlTestCaseRunner.runCurrentTestStep(WsdlTestCaseRunner.java:48)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:148)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestCaseRunner.internalRun(AbstractTestCaseRunner.java:43)
+	at com.eviware.soapui.impl.wsdl.support.AbstractTestRunner.run(AbstractTestRunner.java:135)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+2016-01-27 18:43:13,328 INFO  [SoapUITestCaseRunner] Assertion [SOAP Response] has status UNKNOWN
+2016-01-27 18:43:13,328 INFO  [SoapUITestCaseRunner] Assertion [Schema Compliance] has status UNKNOWN
+2016-01-27 18:43:13,328 INFO  [SoapUITestCaseRunner] Assertion [Not SOAP Fault] has status UNKNOWN
+2016-01-27 18:43:13,328 ERROR [SoapUITestCaseRunner] SOAP Request failed, exporting to [C:\workspace\SoapUI\soapUIAutomation\target\soapui-reports\TestSuite_1-TestCase_2-SOAP_Request-0-FAILED.txt]
+2016-01-27 18:43:13,333 INFO  [SoapUITestCaseRunner] Finished running SoapUI testcase [TestCase 2], time taken: 2ms, status: FAILED
+2016-01-27 18:43:13,333 INFO  [SoapUITestCaseRunner] Project [InventoryAggregationServiceUp] finished with status [FAILED] in 422ms
+2016-01-27 18:43:13,363 WARN  [errorlog] Failed to delete temporary project file; C:\Users\IBM_AD~1\AppData\Local\Temp\project-temp-5424378148824594322.xml
+2016-01-27 18:43:13,364 INFO  [WsdlProject] Saved project [InventoryAggregationServiceUp] to [C:\workspace\SoapUI\soapUIAutomation\SoapUITester-soapui-project.xml - 416289 bytes
